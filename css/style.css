@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.page {
+  padding: 0 20px 60px;
+}
+
+.page--generated {
+  display: none;
+}
+
+.close {
+  text-align: right;
+}
+
+.hero {
+  background-color: purple;
+  margin: 0 -20px 60px;
+  padding: 20px;
+  color: rgba(255,255,255,0.8);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-element {
+  margin-bottom: 32px;
+}
+
+input {
+  margin-bottom: 8px;
+  padding: 8px 16px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  font-size: inherit;
+}
+
+[type="color"] {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+
+button[type="reset"] {
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.card-controls {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 12px;
+}
+
+/* Profile card */
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-image-container {
+  background: purple;
+  padding: 30px;
+}
+
+.card-image-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-content-container {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content-container h1 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card-content-container .card-skills {
+  color: #444;
+  font-size: 12px;
+}
+
+.card-content-container .card-skills + p {
+  margin-top: 24px;
+  line-height: 1.2;
+}
+
+/* Errors */
+.error {
+  display: none;
+  color: orangered;
+  font-style: italic;
+}

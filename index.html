@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="page">
+      <section class="hero">
+        <h1>Business card Generator</h1>
+        <p>Create your own e-card in just few minutes</p>
+      </section>
+
+      <form>
+        <div class="form-element">
+          <label>Put your name here</label>
+          <input type="text" name="userName" />
+          <p class="error">Please add a name.</p>
+        </div>
+        <div class="form-element">
+          <label>Put your birthday here</label>
+          <input type="date" name="date" />
+        </div>
+        <div class="form-element">
+          <label>Upload a photo of yours</label>
+          <input type="file" name="userPic" /><br />
+        </div>
+        <div class="form-element">
+          <label>Pick your favorite color</label>
+          <input id="primaryColor" type="color" name="userColor" /><br />
+        </div>
+        <div class="form-element">
+          <textarea
+            placeholder="Write a paragraph about yourself"
+            maxlength="140"
+            name="userDescription"
+          ></textarea>
+          <p class="error">Please add a short description.</p>
+          <p>
+            <i>Type all you need in 140 characters</i>
+          </p>
+        </div>
+
+        <div class="form-element">
+          <label>Pick your Skills: </label><br />
+
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="userSkills" value="JavaScript" />
+                JavaScript
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="userSkills" value="Ruby" />
+                Ruby
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="userSkills" value="Python" />
+                Python
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="userSkills" value="Java" />
+                Java
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="userSkills" value="PHP" />
+                PHP
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons-container">
+          <button type="reset">Reset</button>
+          <button>Create</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Card -->
+    <section class="page page--generated">
+      <div class="card-controls text-right">
+        <span class="close">Clear card</span>
+      </div>
+      <section class="card">
+        <div class="card-image-container">
+          <img src="" alt="" />
+        </div>
+
+        <div class="card-content-container">
+          <h1>Jane Doe</h1>
+          <p class="age"></p>
+          <p class="card-skills">Skilled in</p>
+          <p class="card-description"></p>
+        </div>
+      </section>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
